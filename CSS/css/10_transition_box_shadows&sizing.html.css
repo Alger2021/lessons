@@ -1,0 +1,100 @@
+/*box-sizing:;
+    default value is content-boxbox-shadow: H-SHADOW V-SHADOW blur spread color inset;
+    u can use multiple shadows by using a comma,
+    transform: duration delay properties ease
+    */
+body {
+    height: 3000px;
+}
+.box-model div,
+.shadow-box div,
+.trans {
+    width: 400px;
+    margin: auto;
+    background-color: #777;
+    text-align: center;
+    line-height: 75px;
+    margin-top: 45px;
+    height: 75px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 10px red solid;
+    padding: 5px;
+}
+
+.content-box {
+    box-sizing: content-box;
+}
+.border-box {
+    box-sizing: border-box;
+    line-height: 45px !important;
+}
+
+.shadow-box div {
+    border: none;
+    width: 600px;
+}
+.inset {
+    box-shadow: 0px 0px 12px 0px black inset;
+}
+.outset {
+    box-shadow: 0px 0px 12px 0px black;
+}
+.mult {
+    box-shadow: 0px 0px 12px 0px black, 0px 0px 12px 3px red,
+        2px 2px 10px 2px green inset;
+}
+hr {
+    margin: 30 0px;
+}
+.trans:hover {
+    width: 560px;
+    background-color: black;
+    color: red;
+}
+.trans {
+    transition: 2s 0.3s all ease;
+    -webkit-transition: 2s 0.3s all ease;
+    -moz-transition: 2s 0.3s all ease;
+    -ms-transition: 2s 0.3s all ease;
+    -o-transition: 2s 0.3s all ease;
+}
+.trans:hover + .circle {
+    background-color: black;
+    color: red;
+}
+.trans:hover + .circle::before {
+    display: none;
+}
+.trans:hover + .circle::after {
+    display: initial;
+}
+.circle {
+    background-color: #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 75px;
+    height: 75px;
+    margin: 50px auto;
+    box-sizing: border-box;
+    outline: red solid 3px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.circle::before {
+    content: "OFF";
+}
+.circle::after {
+    content: "ON";
+    display: none;
+}
+.circle {
+    transition-delay: 0.3s;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}

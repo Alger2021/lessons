@@ -1,0 +1,15 @@
+body {
+    background-color: rgba(41, 41, 41, 1);
+    height: 1000px;
+}
+div {
+    background-color: #ff0000;
+    background-image: url("http://via.placeholder.com/400x200");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-attachment: scroll;
+    padding: 20px;
+    margin: 40px;
+    height: 400px;
+}

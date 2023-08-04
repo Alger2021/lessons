@@ -1,0 +1,15 @@
+/*
+border: width style color;  
+border-radius:;
+ */
+p {
+    border-style: dotted solid groove;
+    border-color: red green blue yellow;
+    border-width: 10px;
+    border-radius: 25px;
+    padding: 15px 20px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}

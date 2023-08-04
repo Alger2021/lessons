@@ -1,0 +1,119 @@
+<!-- 
+    attributes:
+    input:
+        name
+        required
+        value
+        type
+        tabindex
+        placeholder
+        disabled       --------- very important, when activated the user-agent doesn't send it's value to back-end
+        step
+        min
+        max
+        readonly      ------- user-agent send it's value to back-end even tho it is readonly
+        autofocus
+        minlength
+        maxlength
+        checked
+        pattern      ---- check regex patter if valid
+        list     --- works with datalist
+    select:
+        label
+        multiple
+        selected
+    textarea:
+        draggable
+    datalist:
+        id
+    form:
+        action
+        method
+        target
+        novalidate  ------------ just for testing, required inputs are not required when novalidate is applied
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="" method="get" novalidate>
+            <input type="hidden" name="userid" value="#11445" />
+            <div>
+                <label for="username">Username:</label>
+                <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    required
+                    placeholder="enter here username"
+                    autofocus
+                    maxlength="50"
+                />
+            </div>
+            <br />
+            <div>
+                <label for="pass">Password:</label>
+                <input
+                    type="text"
+                    name="pass"
+                    id="pass"
+                    required
+                    placeholder="enter here password"
+                    minlength="10"
+                    maxlength="50"
+                />
+            </div>
+            <br />
+            <div>
+                <input
+                    type="email"
+                    readonly
+                    name="email"
+                    value="torinoetmilano1@gmail.com"
+                />
+            </div>
+            <br />
+            <input type="submit" value="log-in" />
+            <input type="reset" value="tic to reset" />
+            <br />
+            <br />
+            <input type="color" name="preferedC" id="444" value="#ffffff" />
+            <br />
+            <select name="" id="" multiple>
+                <optgroup label="romantic">
+                    <option value="">book1</option>
+                    <option value="">book2</option>
+                    <option value="">book3</option>
+                </optgroup>
+                <optgroup label="Police">
+                    <option value="" selected>book4</option>
+                    <option value="">book5</option>
+                    <option value="">book6</option>
+                </optgroup>
+            </select>
+            <br />
+            <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="test text"
+            ></textarea>
+            <input name="country" list="countries" />
+            <!-- important
+            in datalist the user can type another country that it is not in the options
+            which means he can enter unexisting country or some bs -->
+            <datalist id="countries">
+                <option value="algeria"></option>
+                <option value="tunis"></option>
+                <option value="morroco"></option>
+            </datalist>
+        </form>
+    </body>
+</html>

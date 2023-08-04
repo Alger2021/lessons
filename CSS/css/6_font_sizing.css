@@ -1,0 +1,28 @@
+/* 
+css UNITS
+
+px => pixels
+1em => 1 time of the parent font size
+1rem => 1time of the root font size (root is the html tag)
+1vw => 1vw equal to 1% viewport width
+% => percantage of parent font size by default it is set to 100%
+default webpage font size is 16px
+*/
+div {
+    font-size: 20px;
+}
+.cl1 {
+    font-size: 40px;
+    font-size: 2em;
+}
+.cl2 {
+    font-size: 32px;
+    font-size: 2rem;
+}
+.cl3 {
+    font-size: 5vw;
+}
+.cl4 {
+    font-size: 80px;
+    font-size: 400%;
+}

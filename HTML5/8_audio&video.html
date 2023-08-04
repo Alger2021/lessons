@@ -1,0 +1,57 @@
+<!-- audio attributes 
+autoplay
+loop
+muted
+controls
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- 
+            first method:
+        <audio
+            autoplay
+            src="music/(1392) موسيقى انونيموس الاصلية مع الصور HD1080p - YouTube.MP4"
+        >
+            your browser doesn't support audio tag
+        </audio> -->
+        <audio autoplay loop controls>
+            <source
+                src="music/(1392) موسيقى انونيموس الاصلية مع الصور HD1080p - YouTube.MP4"
+                type="audio/MP4"
+            />
+            <source src="music/anotherone.ogg" type="audio/ogg" />
+            <source src="music/anotherone.mp3" type="audio/mpeg" />
+            your browser doesn't support audio tag
+        </audio>
+        <hr />
+        <!-- video -->
+        <video autoplay muted loop controls>
+            <source
+                src="music/(1392) موسيقى انونيموس الاصلية مع الصور HD1080p - YouTube.MP4"
+                type="video/MP4"
+            />
+            <source src="music/anotherone.mkv" type="put here mkv mime" />
+
+            your browser doesn't support video tag
+            <track
+                src="file-en.vtt"
+                kind="subtitles"
+                srclang="en"
+                label="english lan"
+            />
+            <track
+                src="file-ar.vtt"
+                kind="subtitles"
+                srclang="ar"
+                label="العربية"
+            />
+        </video>
+    </body>
+</html>

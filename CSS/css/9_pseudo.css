@@ -1,0 +1,185 @@
+/* ملاحظة للشباب المبتدأين :معلومات متقدمة شوية:
+
+ان كل من first-line ,first-letter تطبق فقط على العناصر من نوع block مثل العنصر p  و div ولايمكن تطبيقها على العناصر من النوع inline مثل العنصر span .
+ first-line & first-letter  can only be applied to block-level elements.such as p & div ....etc
+
+
+2- في حال طبقت كل من  first-line ,first-letter على عنصر p  مثلا وكلاهما مهمته تغير لون النص الى لون مختلف عن الاخربمعنى 
+p::first-letter{color: blue;}
+p::first-line{color: red;}
+
+ ماذا سوف يكون لون اول حرف احمر ام ازرق  ؟
+الفكرة تكمن ان ::first-letter سوف تكون لها أولوية التطبيق من ::first-line اي بمعنى  ان first-letter  تتجاوز (override) الـــ first-line .
+ the styles specified by ::first-letter override those applied by ::first-line.
+ */
+
+/*
+pseudo classes:
+:empty
+:focus
+:hover
+:checked
+:visited
+pseudo elements:
+::before
+::after
+::first-letter
+::first-line
+::selection
+ */
+.d {
+    width: 300px;
+    height: 60px;
+    margin-left: calc(50% - 150px);
+    background-color: #eee;
+    margin-bottom: 30px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.d:empty {
+    background-color: red;
+}
+
+/* second assignement */
+.s2 {
+    background-color: #eee;
+    font-size: 24px;
+    padding: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+}
+.s2::first-letter {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    margin-left: -44px;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+/* third assignement */
+
+.a {
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-left: solid 12px red;
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 30px;
+    background-color: #eee;
+    position: relative;
+}
+.a::before {
+    content: attr(data-person);
+    background-color: #aaa;
+    font-size: 28px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 120px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    left: -165px;
+}
+.a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -51px;
+    top: 30%;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 20px;
+    border-color: transparent red transparent transparent;
+}
+
+.s3 {
+    counter-increment: counterstrike;
+    width: 800px;
+    background-color: #eee;
+    padding: 24px;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border-right: solid 6px darkred;
+}
+.s3::before {
+    content: counter(counterstrike);
+    background-color: darkred;
+    width: 40px;
+    padding: 24px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: -90px;
+    top: 0;
+    font-weight: bold;
+}
+.op {
+    width: fit-content;
+    padding: 36px;
+    margin: auto;
+    background-color: #eee;
+}
+
+.op div {
+    margin: 20px 0;
+}
+a {
+    background-color: #aaa;
+    color: blue;
+    padding: 12px;
+    font: 28px;
+    text-decoration: none;
+}
+a:hover {
+    color: yellow;
+    font-weight: bold;
+    background-color: black;
+}
+a:visited {
+    color: red;
+}
+input:checked + label {
+    color: red;
+}
+input:focus {
+    border: 2px solid red;
+    outline: none;
+}
+p {
+    font-size: 28px;
+    line-height: 1.6;
+    word-break: break-all;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+}
+
+p.pe::first-letter {
+    color: red;
+    font-weight: bold;
+    letter-spacing: 40px;
+    font-size: 64px;
+    background-color: white;
+}
+p.pe::first-line {
+    color: yellow;
+    background-color: black;
+}
+p::selection {
+    color: red;
+    background-color: black;
+}

@@ -1,0 +1,27 @@
+git status (check status & added files)
+git add * | (add everything to stage area)
+git rm --cached <file> | (un add file from the stage area, opposite of git add)
+git commit -m "" | (commit to local repo)
+
+/*
+
+Github configuration
+git config --list
+
+this is how to show user email and name
+
+git config --global user.email
+git config --global user.name
+
+this how to edit
+git config --global user.email "torinoetmilano1@gmail.com"
+git config --global user.name "Gouffi Ryad"
+
+u can change the configs for specefic repo, by --local
+*/
+
+# git help branch
+
+git branch
+git remote
+git push remote branch

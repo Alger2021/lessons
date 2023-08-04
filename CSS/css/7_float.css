@@ -1,0 +1,15 @@
+/* float and clear */
+.size {
+    width: 50%;
+    background-color: red;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    float: left;
+}
+.parent {
+    background-color: grey;
+}
+.clear {
+    clear: both;
+}

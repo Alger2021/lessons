@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- 
+    ul -> unordered list
+    ol -> ordered list
+    there is also 
+    dl -> description list that works with (dt and dd)
+
+    attributes:
+    reversed -> reverse ordered list
+    start -> start from specific char/num in ordered list
+    type -> num/char/romanian numbers ?
+    value -> in the <li> tag to chose specific val for specific li 
+-->
+
+<html lang="en-EN">
+    <head>
+        <title>Lists</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="This is list disc" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    </head>
+    <body>
+        <ul>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Itaque, ipsum dignissimos.</li>
+            <li>Officiis, laudantium dignissimos!</li>
+        </ul>
+        <br />
+        <hr />
+        <br />
+        <br />
+        <ol reversed type="I" start="4">
+            <li>Lorem, ipsum dolor.</li>
+            <li>Ab, beatae provident.</li>
+            <li value="1">Iste, soluta dolorem.</li>
+        </ol>
+        <br />
+        <hr />
+        <ol type="I">
+            <li>
+                <span>FRONT-END</span>
+                <ol type="1">
+                    <li>
+                        HTML
+                        <ul>
+                            <li>div</li>
+                            <li>flex</li>
+                            <li>grid</li>
+                        </ul>
+                    </li>
+                    <li>
+                        CSS
+                        <ul>
+                            <li>color</li>
+                            <li>background</li>
+                            <li>animation</li>
+                        </ul>
+                    </li>
+                    <li>JAVASCRIPT</li>
+                </ol>
+            </li>
+            <hr />
+            <li>
+                <span>BACK-END</span>
+                <ol type="1">
+                    <li>PHP</li>
+                    <li>DJANGO</li>
+                </ol>
+            </li>
+        </ol>
+    </body>
+</html>

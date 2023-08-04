@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/11_flex.css" />
+    </head>
+    <body>
+        <small>Parent Properties</small>
+        <h1>flex-direction:</h1>
+        <h2>row</h2>
+        <div class="parent parent1">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <h2>row-reverse</h2>
+        <div class="parent parent11">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <h2>column</h2>
+        <div class="parent parent2">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <h2>column-reverse</h2>
+        <div class="parent parent22">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <hr />
+        <h1>flex-wrap:</h1>
+        <h2>nowrap</h2>
+        <div class="parent parenta">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <h2>wrap</h2>
+        <div class="parent parentb">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <h2>wrap-reverse</h2>
+        <div class="parent parentc">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <hr />
+        <h1>flex-flow:</h1>
+        <h2>[flex-direction] + [flex-wrap]</h2>
+        <small
+            >in this case i specified a height for the parent div, otherwise it
+            wont warp, because there is infinite height.</small
+        >
+        <div class="parent parentd">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <hr />
+        <h1>justify-content:</h1>
+        <h2>flex-start</h2>
+        <div class="parent warp parente">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <h2>center</h2>
+        <div class="parent warp parentf">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <h2>flex-end</h2>
+        <div class="parent warp parentg">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <h2>space-between</h2>
+        <div class="parent warp parenth">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <h2>space-around</h2>
+        <div class="parent warp parenti">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <h2>space-evenly</h2>
+        <div class="parent warp parentj">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <hr />
+        <h1>align-items:</h1>
+        <h2>stretch</h2>
+        <div class="parent fixed warp parentk">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <h2>flex-start</h2>
+        <div class="parent fixed warp parentl">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <h2>center</h2>
+        <div class="parent fixed warp parentm">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <h2>flex-end</h2>
+        <div class="parent fixed warp parentn">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <h1>align-content:</h1>
+        <h2>stretch</h2>
+        <div class="parent fixed warp parento">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <h2>flex-start</h2>
+        <div class="parent fixed warp parentp">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <h2>center</h2>
+        <div class="parent fixed warp parentq">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <h2>flex-end</h2>
+        <div class="parent fixed warp parentr">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <h2>space-between</h2>
+        <div class="parent fixed warp parents">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <h2>space-around</h2>
+        <div class="parent fixed warp parentt">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <h2>space-evenly</h2>
+        <div class="parent fixed warp parentu">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <hr />
+        <small>Child Properties</small>
+        <h1>grow:</h1>
+        <div class="parent parentv">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <h1>shrink:</h1>
+        <div class="parent parentw">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <h1>order:</h1>
+        <div class="parent parentx">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <hr />
+        <h1>flex-basis:</h1>
+        <div class="parent parenty">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <div class="parent parentz">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <hr />
+        <h1>flex:</h1>
+        <small>flex:grow-0 shrink-1 basis-auto;</small>
+        <div class="parent parentzz">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <h1>align-self:</h1>
+        <small>same as align-content but for a specefic child</small>
+        <div class="parent parenttt">
+            <div class="child">One</div>
+            <div class="child">two</div>
+            <div class="child3">three</div>
+            <div class="child">for</div>
+            <div class="child">five</div>
+        </div>
+        <hr />
+        <small>these are Elzero assignements</small>
+        <h1>assignement 1:</h1>
+        <div class="elzero">
+            <div class="first">Elzero</div>
+            <hr />
+            <h1>assignement 2:</h1>
+            <div class="sec">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </div>
+            <h1>assignement 3:</h1>
+            <div class="third">
+                <div class="one">1</div>
+                <div class="two">2</div>
+                <div class="three">3</div>
+                <div class="four">4</div>
+                <div class="five">5</div>
+                <div class="six">6</div>
+            </div>
+            <h1>assignement 4:</h1>
+            <div class="fourth">
+                <div class="onee">1</div>
+                <div class="twoo">2</div>
+                <div class="threee">3</div>
+            </div>
+            <h1>assignement 5:</h1>
+            <div class="fifth">
+                <div class="one1">1</div>
+                <div class="two2">2</div>
+                <div class="three3">3</div>
+                <div class="four4">4</div>
+            </div>
+        </div>
+    </body>
+</html>
